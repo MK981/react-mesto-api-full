@@ -1,0 +1,19 @@
+.elements {
+  margin-top: 51px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 17px;
+}
+
+@media (max-width: 847px) {
+  .elements {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 19px;
+  }
+}
+
+@media (max-width: 600px) {
+  .elements {
+    grid-template-columns: 1fr;
+  }
+}

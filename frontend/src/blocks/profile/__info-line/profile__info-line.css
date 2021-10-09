@@ -1,0 +1,9 @@
+.profile__info-line {
+  display: flex;
+}
+
+@media (max-width: 645px) {
+  .profile__info-line {
+    margin-top: 26px;
+  }
+}

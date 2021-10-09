@@ -1,0 +1,11 @@
+.profile__edit-avatar {
+  margin: auto;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../../../images/avaedit.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
