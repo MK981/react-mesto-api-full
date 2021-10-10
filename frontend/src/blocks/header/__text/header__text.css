@@ -5,3 +5,9 @@
   color: white;
   margin: 0 24px 0 0;
 }
+
+@media (max-width: 425px) {
+  .header__text {
+    margin: 0 0 10px 0;
+  }
+}

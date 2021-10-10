@@ -1,0 +1,22 @@
+.header__menuButton {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(../../../images/menu.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+  cursor: pointer;
+}
+
+.header__menuButton:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 425px) {
+  .header__menuButton {
+    display: block;
+  }
+}

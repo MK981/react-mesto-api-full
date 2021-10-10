@@ -7,6 +7,10 @@
 @import url(./blocks/header/__right-panel/header__right-panel.css);
 @import url(./blocks/header/__text/header__text.css);
 @import url(./blocks/header/__exit/header__exit.css);
+@import url(./blocks/header/__menuButton/header__menuButton.css);
+@import url(./blocks/header/__menuButton/_active/header__menuButton_active.css);
+@import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__menu/_active/header__menu_active.css);
 @import url(./blocks/main/main.css);
 
 @import url(./blocks/auth/auth.css);

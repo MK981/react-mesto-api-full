@@ -1,3 +1,9 @@
 .header__right-panel {
   display: flex;
 }
+
+@media (max-width: 425px) {
+  .header__right-panel {
+    display: none;
+  }
+}

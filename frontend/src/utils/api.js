@@ -132,7 +132,8 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'https://api.maxfront.nomoredomains.club'/* 'http://localhost:3001' */,
+  baseUrl: 'https://api.maxfront.nomoredomains.club',
+  // baseUrl: 'http://localhost:3001',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'

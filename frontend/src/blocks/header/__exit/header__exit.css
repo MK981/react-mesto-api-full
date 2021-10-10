@@ -14,4 +14,10 @@
   opacity: 0.6;
 }
 
+@media (max-width: 425px) {
+  .header__exit {
+    margin: 0 0 10px 0;
+  }
+}
+
 
