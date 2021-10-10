@@ -26,6 +26,14 @@ function Header(props) {
     }
   }
 
+  function onExitClick() {
+    props.onSignOut();
+    if(menuOpen && buttonActive) {
+      setButtonActive(false);
+      setMenuOpen(false);
+    }
+  }
+
   const headerMenuClassName = (`header__menu ${menuOpen ? 'header__menu_active' : ''}`);
   const buttonClassName = (`header__menuButton ${buttonActive ? 'header__menuButton_active' : ''}`);
 
@@ -41,7 +49,7 @@ function Header(props) {
                 <button type="button" className={buttonClassName} onClick={switchMenu} aria-label="Меню"></button>
                 <div className={headerMenuClassName}>
                     <p className="header__text">{props.email}</p>
-                    <button type="button" className="header__exit" onClick={props.onSignOut} aria-label="Выйти">Выйти</button>
+                    <button type="button" className="header__exit" onClick={onExitClick} aria-label="Выйти">Выйти</button>
                   </div>
               </div> : switchLink()}
         </header>
