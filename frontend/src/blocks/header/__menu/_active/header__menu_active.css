@@ -1,3 +1,9 @@
 .header__menu_active {
   display: flex;
 }
+
+@media (min-width: 425px) {
+  .header__menu_active {
+    display: none;
+  }
+}
