@@ -16,7 +16,7 @@ const NotFoundError = require('./errors/not-found-err');
 const { createUser, login } = require('./controllers/users');
 const regExp = require('./regExp/reg-exp');
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3000 } = process.env;
 
 const app = express();
 
