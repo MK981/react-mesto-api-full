@@ -1,0 +1,9 @@
+.auth__submit_type_reg {
+  margin-top: 216px;
+}
+
+@media (max-width: 425px) {
+  .auth__submit_type_reg {
+    margin-top: 100px;
+  }
+}

@@ -1,7 +1,7 @@
-//export const BASE_URL = 'http://localhost:3001';
-export const BASE_URL = 'https://api.maxfront.nomoredomains.club';
+export const BASE_URL = 'http://localhost:3001';
+//export const BASE_URL = 'https://api.maxfront.nomoredomains.club';
 
-export const register = (password, email) => {
+export const register = (password, email, name, info) => {
   return fetch(`${BASE_URL}/signup`, {
     method: 'POST',
     headers: {
@@ -10,7 +10,10 @@ export const register = (password, email) => {
     },
     body: JSON.stringify({
       password: password,
-      email: email })
+      email: email,
+      name: name,
+      about: info
+     })
   })
   .then(res => checkResponse(res))
   .then(data => {return data;})

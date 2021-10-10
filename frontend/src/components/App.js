@@ -82,7 +82,7 @@ function App() {
                 setToken(localStorage.getItem('token'));
                 history.push('/');
                 setCurrentUser(user.data);
-                setCards(cards.data);
+                setCards(cards.data.reverse());
               })
               .catch((err) => {
                 console.log(err);
@@ -200,8 +200,8 @@ function App() {
     .finally(() => {setIsLoaderOpen(false);})
   }
 
-  function onRegister(password, email) {
-    mestoAuth.register(password, email).then(() => {
+  function onRegister(password, email, name, info) {
+    mestoAuth.register(password, email, name, info).then(() => {
       history.push('/sign-in');
       setInfoImage(okImage);
       setInfoText('Вы успешно зарегистрировались!');

@@ -14,6 +14,7 @@
 @import url(./blocks/auth/__form/auth__form.css);
 @import url(./blocks/auth/__input/auth__input.css);
 @import url(./blocks/auth/__submit/auth__submit.css);
+@import url(./blocks/auth/__submit/_type/auth__submit_type_reg.css);
 @import url(./blocks/auth/__text/auth__text.css);
 @import url(./blocks/auth/__link/auth__link.css);
 

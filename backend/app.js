@@ -16,7 +16,7 @@ const NotFoundError = require('./errors/not-found-err');
 const { createUser, login } = require('./controllers/users');
 const regExp = require('./regExp/reg-exp');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3001 } = process.env;
 
 const app = express();
 
@@ -62,7 +62,7 @@ app.post('/signup', celebrate({
     email: Joi.string().required().email(),
     password: Joi.string().required().min(8),
     name: Joi.string().min(2).max(30),
-    about: Joi.string().min(2).max(30),
+    about: Joi.string().min(2).max(40),
     avatar: Joi.string().pattern(regExp),
   }),
 }), createUser);

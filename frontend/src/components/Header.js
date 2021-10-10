@@ -15,7 +15,7 @@ function Header(props) {
 
     return (
         <header className="header">
-            <a href="#" target="_self"><img src={logo} alt="Логотип" className="header__logo" /></a>
+            <a href="https://maxfront.nomoredomains.monster" target="_self"><img src={logo} alt="Логотип" className="header__logo" /></a>
             {props.loggedIn ? <div className="header__right-panel"> <p className="header__text">{props.email}</p>
             <button type="button" className="header__exit" onClick={props.onSignOut} aria-label="Выйти">Выйти</button> </div> : switchLink()}
         </header>
